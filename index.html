@@ -21,28 +21,28 @@
   <body class="bg-light">
 
  
-<div class=" banner-wrap vh-100 vw-100 ">
+<div class=" banner-wrap vh-100 vw-100 d-flex flex-column align-items-center justify-content-center  ">
 
-  <header class="px-5 p-3 text-white">
+  <header class="px-5 p-3 text-white fixed-top">
     <div class="overlay"></div>
     <div>
       <h3 class="float-md-start text-center"> Portfolio </h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a><a class="nav-link fw-bold py-1 px-0" href="#About me"> About me</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#Projects">Projects</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#Contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class=" d-flex flex-column align-items-center justify-content-center h-75 text-center " >
+  <main class=" text-center " >
     <h1 class="display-4"> ENGEL MAHLALELA.</h1>
-    <p class="lead"> Novice: Fullstack Developer </p>
+    <span id="typed" class="lead"></span>
   </main>
 </div>
 
 
-<section>
+<section id="About me ">
 <div class="container p-5">
   <div class="card">
     <div class="card-body">
@@ -84,7 +84,7 @@
 </section>
 
 
-<section>
+<section id="Projects">
 
   <div class="container" p-5>
     <h1 class="text-center"> Projects </h1>
@@ -286,7 +286,7 @@
 
 
 
-<section>
+<section id="Contact">
   <div class="container p-5">
     <div class="card">
       <div class="card-body text-center">
@@ -299,7 +299,7 @@
 </p>
 
 <form>
-  <div class="mb-3">
+  <div class=" mb-3">
     <input type="email" class="form-control" id="exampleInputEmail1"aria-describedby="emailHelp" placeholder="Enter Email Address">
   </div>
   <div class="mb-3">
@@ -322,6 +322,31 @@
   </div>
   </section>
 
-    
+ <footer class="bg-dark text centre text-white text-center">
+  <div class="container" p-5 m>
+<p>  Developed by Engel Mahlalela using Bootstrap, for Zaio Bootstrap course </p>
+  </div>
+ </footer>
+
+  
+<script>
+  window.addEventListener("scroll",() => {
+  const header = document.querySelector("header")
+  header.classList.toggle("scrolling", window.scrollY > 0)
+  })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+var typed = new Typed('#typed', {
+strings: [' Fullstack Developer.', ],
+typeSpeed: 75,
+
+});
+</script>
+
+
   </body>
+
 </html>
+

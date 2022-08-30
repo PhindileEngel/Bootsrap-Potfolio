@@ -12,11 +12,6 @@
  * Base structure
  */
 
-body {
-}
-
-
-
 /*
  * Header
  */
@@ -58,4 +53,11 @@ z-index: 1;
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+
+.scrolling {
+  background: #333;
+  opacity: 80%;
+  transition: all 0.5s;
 }
